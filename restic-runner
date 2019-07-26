@@ -50,7 +50,7 @@ function error {
 }
 function die {
     error "$@"
-    exit $errors
+    #exit $errors
 }
 function usage {
     cat <<EOF
@@ -588,4 +588,4 @@ fi
 log "$command FINISHED.  Duration: $duration  ${du_message}"
 
 # Exit with number of errors, which is perfect for chronic.
-exit $errors
+#exit $errors
