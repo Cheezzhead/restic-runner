@@ -269,6 +269,7 @@ function backup {
            $(exclude_if_present) \
            --exclude-file "$exclude_file" \
            --tag "$tag" \
+           "${extra_options[@]}" \
            "${include_paths[@]}"
 }
 function check {
